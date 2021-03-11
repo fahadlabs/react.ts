@@ -1,0 +1,72 @@
+{
+  "name": "react.ts",
+  "version": "0.0.1",
+  "private": true,
+  "description": "React, Typescript, Redux, Router, SCSS",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fkgfahad/react.ts"
+  },
+  "author": {
+    "name": "Fahad Hossain",
+    "email": "fahad@avalonx.io",
+    "url": "https://www.avalonx.io"
+  },
+  "scripts": {
+    "dev": "webpack serve --config webpack.dev.config.ts",
+    "test": "jest --config jest.config.json",
+    "test:watch": "npm run test -- --watch",
+    "build": "webpack --config webpack.prod.config.ts"
+  },
+  "dependencies": {
+    "connected-react-router": "^6.9.1",
+    "history": "^5.0.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-redux": "^7.2.2",
+    "react-router-dom": "^5.2.0",
+    "redux": "^4.0.5"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.8",
+    "@babel/plugin-transform-runtime": "^7.13.9",
+    "@babel/preset-env": "^7.13.9",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@babel/runtime": "^7.13.9",
+    "@types/copy-webpack-plugin": "^6.4.0",
+    "@types/fork-ts-checker-webpack-plugin": "^0.4.5",
+    "@types/jest": "^26.0.20",
+    "@types/mini-css-extract-plugin": "^1.2.2",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.1",
+    "@types/react-redux": "^7.1.16",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/webpack": "^4.41.26",
+    "@types/webpack-dev-server": "^3.11.1",
+    "@typescript-eslint/eslint-plugin": "^4.16.1",
+    "@typescript-eslint/parser": "^4.16.1",
+    "babel-loader": "^8.2.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "copy-webpack-plugin": "^8.0.0",
+    "css-loader": "^5.1.2",
+    "eslint": "^7.21.0",
+    "eslint-plugin-react": "^7.22.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-webpack-plugin": "^2.5.2",
+    "file-loader": "^6.2.0",
+    "fork-ts-checker-webpack-plugin": "^6.1.1",
+    "html-webpack-plugin": "^5.3.0",
+    "jest": "^26.6.3",
+    "mini-css-extract-plugin": "^1.3.9",
+    "node-sass": "^5.0.0",
+    "react-test-renderer": "^17.0.1",
+    "sass-loader": "^11.0.1",
+    "style-loader": "^2.0.0",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.3",
+    "webpack": "^5.24.4",
+    "webpack-cli": "^4.5.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
