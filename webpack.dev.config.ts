@@ -4,7 +4,11 @@ import webpack, { Configuration } from 'webpack';
 import ESLintPlugin from 'eslint-webpack-plugin';
 import path from 'path';
 
-const config: Configuration = {
+interface IConfig extends Configuration {
+  devServer: any;
+}
+
+const config: IConfig = {
   mode: 'development',
   output: {
     publicPath: '/',
