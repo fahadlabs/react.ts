@@ -63,7 +63,7 @@ const config: webpack.Configuration = {
     new ESLintPlugin({
       extensions: ['js', 'jsx', 'ts', 'tsx'],
     }),
-    new CleanWebpackPlugin(),
+    new CleanWebpackPlugin() as any,
     new MiniCssExtractPlugin({ filename: 'css/[name].[contenthash].css' }),
     new CopyPlugin({
       patterns: [{ from: 'public', to: '.', globOptions: { ignore: ['**/index.html'] } }],
