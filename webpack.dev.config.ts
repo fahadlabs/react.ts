@@ -58,11 +58,13 @@ const config: IConfig = {
     }),
     new webpack.HotModuleReplacementPlugin(),
     new ForkTsCheckerWebpackPlugin({ async: false }),
-    new ESLintPlugin({ extensions: ['js', 'jsx', 'ts', 'tsx'] }),
+    new ESLintPlugin({ extensions: ['ts', 'tsx'] }),
   ],
   devtool: 'inline-source-map',
   devServer: {
-    contentBase: path.join(__dirname, 'public'),
+    static: {
+      directory: path.join(__dirname, 'public'),
+    },
     historyApiFallback: true,
     port: 3000,
     open: true,
